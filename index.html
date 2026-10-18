@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean & Bloom | Coffee Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="#home" class="logo">bean<span>&</span>bloom</a>
+
+    <button id="menuBtn" aria-label="Open navigation">☰</button>
+
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#menu">Our Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p class="tag">YOUR DAILY MOMENT OF CALM</p>
+        <h1>Good coffee.<br><em>Good mood.</em></h1>
+        <p>
+          Freshly brewed coffee, delicious treats,
+          and little moments worth enjoying.
+        </p>
+        <a class="btn" href="#menu">Explore our menu ↗</a>
+      </div>
+
+      <div class="coffee-art">
+        <div class="coffee-cup">
+          <div class="coffee-top">✿</div>
+          <span>coffee</span>
+        </div>
+        <div class="decoration">✳</div>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <p class="tag">MADE WITH LOVE</p>
+      <h2>Our <em>favorites.</em></h2>
+
+      <div class="menu-grid">
+        <article class="card">
+          <div class="product-image latte">☕</div>
+          <h3>Honey Oat Latte</h3>
+          <p>Espresso, oat milk and honey.</p>
+          <strong>$4.50</strong>
+        </article>
+
+        <article class="card">
+          <div class="product-image cold">🥤</div>
+          <h3>Cold Brew</h3>
+          <p>Slow-brewed and refreshing.</p>
+          <strong>$4.75</strong>
+        </article>
+
+        <article class="card">
+          <div class="product-image pastry">🥐</div>
+          <h3>Butter Croissant</h3>
+          <p>Freshly baked every morning.</p>
+          <strong>$3.25</strong>
+        </article>
+      </div>
+      <p class="note">Sample products and prices for this demo website.</p>
+    </section>
+
+    <section class="about" id="about">
+      <p class="tag">OUR LITTLE STORY</p>
+      <h2>More than coffee.<br><em>A feeling.</em></h2>
+      <p>
+        We believe the best moments happen when you slow down.
+        Every cup is prepared with care, one sip at a time.
+      </p>
+    </section>
+
+    <section class="contact" id="contact">
+      <div>
+        <p class="tag">SAY HELLO</p>
+        <h2>Let's have a<br><em>coffee date.</em></h2>
+        <p>Have a question? Send us a message.</p>
+      </div>
+
+      <form id="contactForm">
+        <label for="name">Your name</label>
+        <input id="name" type="text" placeholder="tap your name here" required>
+
+        <label for="email">Your email</label>
+        <input id="email" type="email" placeholder="Leave your email address below" required>
+
+        <label for="message">Your message</label>
+        <textarea id="message" rows="4"
+          placeholder="Would you like to go on A coffee DATE!!" required></textarea>
+
+        <button class="btn" type="submit">Send message ↗</button>
+        <p id="formMessage" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+<small>© <span id="year"></span> Bean & Bloom. Demo website by Arij Hbayli.</small>
+
+  <script src="script.js"></script>
+</body>
+</html>
